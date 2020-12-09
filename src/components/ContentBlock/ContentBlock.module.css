@@ -1,0 +1,38 @@
+.content {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: white;
+
+}
+
+.wrap {
+    position: relative;
+    z-index: 1;
+    /*padding: 100px 16px;*/
+    max-width: 1024px;
+}
+
+.contentText {
+    color: red;
+}
+
+.title {
+    font-size: 68px;
+    color: black;
+    padding: 24px 0;
+}
+
+.backgroundColor {
+    background-color: red;
+}

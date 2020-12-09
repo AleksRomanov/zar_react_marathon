@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+    /*background-attachment: fixed;*/
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.wrap {
+    position: relative;
+    z-index: 1;
+    /*padding: 100px 16px;*/
+    /*max-width: 1024px;*/
+}
+
+.footerText {
+    font-size: 20px;
+    color: red;
+    margin: 0;
+}
+
+.title {
+    font-size: 68px;
+    color: black;
+    margin: 0;
+    /*padding: 24px 0;*/
+}
+
+.backgroundColor {
+    background-color: red;
+}
