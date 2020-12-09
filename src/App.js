@@ -4,28 +4,90 @@ import ContentBlock from "./components/ContentBlock/ContentBlock";
 import FooterBlock from "./components/FooterBlock/FooterBlock";
 import BackgroundImage from "../src/components/HeaderBlock/img/background.jpg";
 import BackgroundImage_2 from "../src/components/HeaderBlock/img/background2.jpg";
+import Header from "./components/Header/Header";
+import Paragraph from "./components/Paragraph/Paragraph";
+
+import {ReactComponent as ReactLogo} from '../src/components/Paragraph/img/logo.svg';
+import Card from "./components/Card/Card";
+
+const wordsList = [
+    {
+        eng: 'between',
+        rus: 'между'
+    },
+    {
+        eng: 'high',
+        rus: 'высокий'
+    },
+    {
+        eng: 'really',
+        rus: 'действительно'
+    },
+    {
+        eng: 'something',
+        rus: 'что-нибудь'
+    },
+    {
+        eng: 'most',
+        rus: 'большинство'
+    },
+    {
+        eng: 'another',
+        rus: 'другой'
+    },
+    {
+        eng: 'much',
+        rus: 'много'
+    },
+    {
+        eng: 'family',
+        rus: 'семья'
+    },
+    {
+        eng: 'own',
+        rus: 'личный'
+    },
+    {
+        eng: 'out',
+        rus: 'из/вне'
+    },
+    {
+        eng: 'leave',
+        rus: 'покидать'
+    },
+];
+
 
 
 const App = () => {
     return (
         <React.Fragment>
             <HeaderBlock
-                title='Учите слова онлайн'
-                descr='Воспользуйтесь карточками для запоминания
-                    и пополнения активныйх словарных запасов.'
                 headerStyle={
                     {
-                        // backgroundColor: 'yellow',
+                        backgroundColor: 'yellow',
                         color: 'white',
                         fontsize: '50px',
                         backgroundImage: `url(${BackgroundImage})`
                     }
                 }
-            />
+            >
+                <Header>
+                    Время учить и учить и учииииииитььььььсяяяяя!!!!!
+                </Header>
+                <Paragraph>
+                    Воспользуйтесь карточками для запоминания и пополнения активныйх словарных запасов.
+                </Paragraph>
+
+            </HeaderBlock>
+
+            <div>
+                {
+                    wordsList.map(({eng, rus}) => <Card eng={eng} rus={rus}/>)
+                }
+            </div>
 
             <HeaderBlock
-                title='Я люблю Реакт и безумно сильно хочу его понять!!!'
-                descr='Участвуем и делаем задания!!!'
                 headerStyle={
                     {
                         backgroundColor: 'red',
@@ -35,7 +97,16 @@ const App = () => {
                     }
                 }
                 // hideBackground={false}
-            />
+            >
+                <Header>
+                    Я люблю Реакт и безумно сильно хочу его понять!!!
+                </Header>
+                <Paragraph>
+                    Участвуем и делаем задания!!!
+                </Paragraph>
+                <ReactLogo />
+
+            </HeaderBlock>
 
             <ContentBlock title='Страница с контентом'
                           contentText='Воспользуйтесь карточками для запоминания
