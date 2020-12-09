@@ -2,6 +2,8 @@ import React from 'react';
 import HeaderBlock from "./components/HeaderBlock/HeaderBlock";
 import ContentBlock from "./components/ContentBlock/ContentBlock";
 import FooterBlock from "./components/FooterBlock/FooterBlock";
+import BackgroundImage from "../src/components/HeaderBlock/img/background.jpg";
+import BackgroundImage_2 from "../src/components/HeaderBlock/img/background2.jpg";
 
 
 const App = () => {
@@ -13,12 +15,11 @@ const App = () => {
                     и пополнения активныйх словарных запасов.'
                 headerStyle={
                     {
-                        backgroundColor: 'yellow',
-                        color: 'black',
-                        fontsize: '50px'
+                        // backgroundColor: 'yellow',
+                        color: 'white',
+                        fontsize: '50px',
+                        backgroundImage: `url(${BackgroundImage})`
                     }
-
-
                 }
             />
 
@@ -29,7 +30,8 @@ const App = () => {
                     {
                         backgroundColor: 'red',
                         color: 'white',
-                        fontsize: '60px'
+                        fontsize: '60px',
+                        backgroundImage: `url(${BackgroundImage_2})`
                     }
                 }
                 // hideBackground={false}
